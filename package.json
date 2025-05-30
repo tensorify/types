@@ -1,0 +1,49 @@
+{
+  "name": "@tensorify/types",
+  "version": "1.0.1",
+  "description": "TypeScript type definitions for Tensorify plugin development",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "tensorify",
+    "typescript",
+    "types",
+    "ml",
+    "pytorch",
+    "plugin",
+    "machine-learning",
+    "deep-learning"
+  ],
+  "author": "Tensorify Team <team@tensorify.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tensorify/types"
+  },
+  "homepage": "https://docs.tensorify.io/types",
+  "bugs": {
+    "url": "https://github.com/tensorify/types/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
