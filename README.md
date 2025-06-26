@@ -1,5 +1,7 @@
 # @tensorify/sdk
 
+> **📦 Package Migration Notice**: This package was previously published as `@tensorify/types`. Please update your imports to use `@tensorify/sdk` instead.
+
 **Complete SDK for developing Tensorify plugins** - Everything you need in one package.
 
 ## 🚀 Quick Start
@@ -159,6 +161,24 @@ npm run cli -- create test-plugin
 - **CLI Tools**: Scaffolding and validation
 - **Type Safety**: Full TypeScript support
 - **Examples**: Ready-to-use templates
+
+## 📦 Migration Guide
+
+### From @tensorify/types to @tensorify/sdk
+
+```bash
+# Uninstall old package
+npm uninstall @tensorify/types
+
+# Install new package
+npm install @tensorify/sdk
+
+# Update your imports
+- const { NodeType } = require('@tensorify/types');
++ const { NodeType, BaseNode, DevUtils, createPlugin } = require('@tensorify/sdk');
+```
+
+The new package includes everything from the old `@tensorify/types` plus a complete SDK for plugin development.
 
 ## 🚀 Migration from v0.x
 
