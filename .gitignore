@@ -42,3 +42,8 @@ coverage/
 # Temporary folders
 tmp/
 temp/
+
+# Test files and directories
+test-workspace/
+test-*.js
+*-test/
